@@ -1,0 +1,83 @@
+\documentclass[11pt,letterpaper]{report}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\graphicspath{{./images/}{IR}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\lhead{CS333}
+\chead{Project XX Report}
+\rhead{Mario Zavalas}
+\author{Mario Zavalas}
+\title{Project XX Report\\Introduction to Operating Systems\\ Winter 2017}
+\date{}
+\begin{document}
+%	\maketitle
+
+	\section*{Description}
+	This section will contain, in your own words, a general sense of what the assignment required you to do and learn. It should not have too many details of what you specifically did, as those belong in the deliverables and implementation sections. Please do not merely copy the project description. Note that this section should not be overly verbose. Instead, think of it as a short, one or two paragraph summary of the key ideas in the assignment plus any new items that you’ve learned while doing the assignment.
+
+
+	\section*{Deliverables}
+This is a description of the principle artifacts that you produced for the project. In general, the assignments will require you to add new system calls, create user commands, and also modify, improve, and add to the existing functionality of the various facilities in xv6 (e.g. the scheduler, file system). These are all mentioned in this section, along with a brief description of the added functionality. So, this section should indicate what the new system call lets the user do; what the new user command does and that, if it displays something, a brief description of what it is displaying; and, finally, the general nature of the newly modified, improved, or added functionality. Note that you must list all assumptions, limitations, and edge cases [that are implementation depen- dent] of each feature in this section (e.g. that the displayed elapsed time is to the nearest hundredth of a second, that the maximum UID and GID is 32,676 (unsigned), etc.).
+
+	The following features were added to xv6:
+
+	\begin{itemize}
+
+	\item A sample item
+
+	\end{itemize}
+
+	\section*{Implementation}
+	This describes the actual code you wrote to implement the deliverables. When you reference it, use the specific filename and the corresponding line number(s). Do not give a step by step rundown of what the code does (e.g. I declared two integer variables, subtracted them, ...). Instead, only describe the non-obvious aspects of your code, such as a description of what a helper method does, what a block of code is intended to do (e.g. Lines X-Y in proc.c grabs a process from the free list), a layman description of the algorithm you used for some specific calculation/action, etc. You must list all of the files that were modified here, and describe the modifications made in each one. Do not include the actual source code unless it is absolutely necessary to communicate the implementation. For example, it is fine to include source code if you need to provide a step-by-step explanation of a particularly tricky algorithm, but only include the necessary code. Assume that the reader is familiar with xv6 and has access to your code. In general, there should be no need to list any code here.
+
+
+	\subsection*{Sample Subsection}
+	The general style is to print files, commands, functions, and flags like {\tt THIS} ({\color{red}line XX}), with the line number(s) of the changes appended. The actual changes should be itemized with a description of what was changed (in terms of function), along with a brief explanation if necessary.:
+	\begin{itemize}
+
+	\item {\color{red}Lines XX -- YY} changes should be itemized.
+
+	\end{itemize}
+
+	\subsection*{Another Sample Subsection}
+	Subsection for a different feature.
+
+	\begin{itemize}
+
+	\item {\tt user.h} sample change.
+	\end{itemize}
+
+
+	\section*{Testing}
+	Testing Methodology. This is where you will document your tests and testing strategy to show that your project meets its requirements. Do not include source code in this section except in those (rare) cases where a code snippet would greatly improve understanding. Every test must have a corresponding output demonstrating the test. You risk losing points if you fail to properly document your tests; ``it should be obvious'' does not suffice. In general, tests should follow this outline:
+		\begin{enumerate}
+			\item Test Name
+			\item Test Description
+			\item Expected Results
+			\item Test Output / Actual Results
+			\item Discussion
+			\item Indication of PASS/FAIL
+		\end{enumerate}
+
+		For ``Test Output'', course staff find screen shots very useful.
+		Some projects will provide useful test code that will let you test some, if not all, of the requirements outlined in the ``Required Tests'' section. You are free to use any provided test code to show that you meet the relevant requirements, but you must describe how each of the provided tests work and what requirements they specifically test in order to get any credit for that test.
+
+	\subsection*{Sample Test Section}
+	I tested this feature by modifying the {\tt Makefile} to turn on {\tt PRINT\_SYSCALLS} flag, then booting the xv6 kernel, and observing the following output:
+% so this block of graphics code is really finnickey? i should modify this so it is a little more clear.
+% maybe come up w/ a way to tie the figure # to the text?
+% \begin{figure}[h!]
+% \centering
+% \includegraphics[width=0.8\linewidth]{./images/syscall_trace_test.jpg}
+% \caption[Syscall Trace]{System Call Tracing Facility}
+% \label{fig:syscalltrace}
+% \end{figure}
+
+\end{document}
